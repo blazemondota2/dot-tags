@@ -104,7 +104,7 @@ class DotTagsOverlay extends WidgetItemOverlay
 
 		// body: lighter at the top, slightly deeper at the bottom
 		Ellipse2D.Float body = new Ellipse2D.Float(x, y, s, s);
-		g.setPaint(new GradientPaint(x, y, withAlpha(mix(base, Color.WHITE, 0.30f), a),
+		g.setPaint(new GradientPaint(x, y, withAlpha(mix(base, Color.WHITE, 0.10f), a),
 			x, y + s, withAlpha(mix(base, Color.BLACK, 0.12f), a)));
 		g.fill(body);
 
@@ -113,12 +113,12 @@ class DotTagsOverlay extends WidgetItemOverlay
 		float hh = s * 0.42f;
 		float hx = x + (s - hw) / 2f;
 		float hy = y + s * 0.08f;
-		g.setPaint(new GradientPaint(hx, hy, withAlpha(Color.WHITE, 0.55f * a),
+		g.setPaint(new GradientPaint(hx, hy, withAlpha(Color.WHITE, 0.30f * a),
 			hx, hy + hh, withAlpha(Color.WHITE, 0f)));
 		g.fill(new Ellipse2D.Float(hx, hy, hw, hh));
 
 		// hairline ring so it reads crisply against busy item art
-		g.setPaint(withAlpha(Color.WHITE, 0.35f * a));
+		g.setPaint(withAlpha(Color.WHITE, 0.15f * a));
 		g.setStroke(new BasicStroke(0.6f));
 		g.draw(new Ellipse2D.Float(x + 0.3f, y + 0.3f, s - 0.6f, s - 0.6f));
 

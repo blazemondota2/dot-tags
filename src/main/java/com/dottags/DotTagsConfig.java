@@ -62,21 +62,21 @@ public interface DotTagsConfig extends Config
 		return false;
 	}
 
-	@ConfigItem(keyName = "group1", name = "Group 1", description = "Color of group 1", position = 10, section = colorSection)
-	default Color group1() { return new Color(0xFF3B30); }
+	@ConfigItem(keyName = "color1", name = "Group 1", description = "Color of group 1", position = 10, section = colorSection)
+	default Color group1() { return new Color(0xFF1A1A); }
 
-	@ConfigItem(keyName = "group2", name = "Group 2", description = "Color of group 2", position = 11, section = colorSection)
-	default Color group2() { return new Color(0x34C759); }
+	@ConfigItem(keyName = "color2", name = "Group 2", description = "Color of group 2", position = 11, section = colorSection)
+	default Color group2() { return new Color(0x1ED93C); }
 
-	@ConfigItem(keyName = "group3", name = "Group 3", description = "Color of group 3", position = 12, section = colorSection)
+	@ConfigItem(keyName = "color3", name = "Group 3", description = "Color of group 3", position = 12, section = colorSection)
 	default Color group3() { return new Color(0x0A84FF); }
 
-	@ConfigItem(keyName = "group4", name = "Group 4", description = "Color of group 4", position = 13, section = colorSection)
+	@ConfigItem(keyName = "color4", name = "Group 4", description = "Color of group 4", position = 13, section = colorSection)
 	default Color group4() { return new Color(0xFFCC00); }
 
-	@ConfigItem(keyName = "group5", name = "Group 5", description = "Color of group 5", position = 14, section = colorSection)
+	@ConfigItem(keyName = "color5", name = "Group 5", description = "Color of group 5", position = 14, section = colorSection)
 	default Color group5() { return new Color(0xBF5AF2); }
 
-	@ConfigItem(keyName = "group6", name = "Group 6", description = "Color of group 6", position = 15, section = colorSection)
+	@ConfigItem(keyName = "color6", name = "Group 6", description = "Color of group 6", position = 15, section = colorSection)
 	default Color group6() { return new Color(0xFFFFFF); }
 }
